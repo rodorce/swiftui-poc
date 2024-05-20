@@ -9,9 +9,11 @@ import SwiftUI
 
 @main
 struct swiftui_pocApp: App {
+    var viewModel: AccountViewModel = AccountViewModel()
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            HomeView()
+                .environmentObject(viewModel)
         }
     }
 }

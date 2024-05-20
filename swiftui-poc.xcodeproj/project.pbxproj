@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DA22880D2BFB92AA00D47F80 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA22880C2BFB92AA00D47F80 /* HomeView.swift */; };
+		DA2288112BFB95DD00D47F80 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = DA2288102BFB95DD00D47F80 /* data.json */; };
+		DA2288132BFB965900D47F80 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2288122BFB965900D47F80 /* Account.swift */; };
+		DA2288152BFB96C300D47F80 /* AccountsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2288142BFB96C300D47F80 /* AccountsListView.swift */; };
+		DA2288172BFB96FF00D47F80 /* AccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2288162BFB96FF00D47F80 /* AccountViewModel.swift */; };
+		DA22881A2BFB9B8800D47F80 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2288192BFB9B8800D47F80 /* NetworkService.swift */; };
+		DA2288212BFBA89400D47F80 /* ViewHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2288202BFBA89400D47F80 /* ViewHelpers.swift */; };
 		DAE91B9A2BE92B7500E76C7D /* swiftui_pocApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE91B992BE92B7500E76C7D /* swiftui_pocApp.swift */; };
 		DAE91B9C2BE92B7500E76C7D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE91B9B2BE92B7500E76C7D /* ContentView.swift */; };
 		DAE91B9E2BE92B7600E76C7D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAE91B9D2BE92B7600E76C7D /* Assets.xcassets */; };
@@ -34,6 +41,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DA22880C2BFB92AA00D47F80 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		DA2288102BFB95DD00D47F80 /* data.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
+		DA2288122BFB965900D47F80 /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
+		DA2288142BFB96C300D47F80 /* AccountsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsListView.swift; sourceTree = "<group>"; };
+		DA2288162BFB96FF00D47F80 /* AccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewModel.swift; sourceTree = "<group>"; };
+		DA2288192BFB9B8800D47F80 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		DA2288202BFBA89400D47F80 /* ViewHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewHelpers.swift; sourceTree = "<group>"; };
 		DAE91B962BE92B7500E76C7D /* swiftui-poc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "swiftui-poc.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAE91B992BE92B7500E76C7D /* swiftui_pocApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swiftui_pocApp.swift; sourceTree = "<group>"; };
 		DAE91B9B2BE92B7500E76C7D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -71,6 +85,48 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DA2288092BFB924900D47F80 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DA2288122BFB965900D47F80 /* Account.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DA22880A2BFB924F00D47F80 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				DA2288162BFB96FF00D47F80 /* AccountViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		DA22880B2BFB926600D47F80 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DA22880C2BFB92AA00D47F80 /* HomeView.swift */,
+				DA2288142BFB96C300D47F80 /* AccountsListView.swift */,
+				DAE91B9B2BE92B7500E76C7D /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DA2288182BFB9B7200D47F80 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				DA2288192BFB9B8800D47F80 /* NetworkService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		DA22881F2BFBA87E00D47F80 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				DA2288202BFBA89400D47F80 /* ViewHelpers.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		DAE91B8D2BE92B7500E76C7D = {
 			isa = PBXGroup;
 			children = (
@@ -94,9 +150,14 @@
 		DAE91B982BE92B7500E76C7D /* swiftui-poc */ = {
 			isa = PBXGroup;
 			children = (
+				DA2288182BFB9B7200D47F80 /* Services */,
+				DA22881F2BFBA87E00D47F80 /* Helpers */,
+				DA22880B2BFB926600D47F80 /* Views */,
+				DA22880A2BFB924F00D47F80 /* ViewModel */,
+				DA2288092BFB924900D47F80 /* Model */,
 				DAE91B992BE92B7500E76C7D /* swiftui_pocApp.swift */,
-				DAE91B9B2BE92B7500E76C7D /* ContentView.swift */,
 				DAE91B9D2BE92B7600E76C7D /* Assets.xcassets */,
+				DA2288102BFB95DD00D47F80 /* data.json */,
 				DAE91B9F2BE92B7600E76C7D /* Preview Content */,
 			);
 			path = "swiftui-poc";
@@ -232,6 +293,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DAE91BA12BE92B7600E76C7D /* Preview Assets.xcassets in Resources */,
+				DA2288112BFB95DD00D47F80 /* data.json in Resources */,
 				DAE91B9E2BE92B7600E76C7D /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -257,8 +319,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA2288132BFB965900D47F80 /* Account.swift in Sources */,
+				DA2288172BFB96FF00D47F80 /* AccountViewModel.swift in Sources */,
+				DA2288212BFBA89400D47F80 /* ViewHelpers.swift in Sources */,
+				DA22881A2BFB9B8800D47F80 /* NetworkService.swift in Sources */,
+				DA22880D2BFB92AA00D47F80 /* HomeView.swift in Sources */,
 				DAE91B9C2BE92B7500E76C7D /* ContentView.swift in Sources */,
 				DAE91B9A2BE92B7500E76C7D /* swiftui_pocApp.swift in Sources */,
+				DA2288152BFB96C300D47F80 /* AccountsListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
