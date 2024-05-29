@@ -1,0 +1,7 @@
+{
+    "accountName": "Account Name MDM",
+    "tdlinx": 12345,
+    "address": "Fake Address 123, FakeState",
+    "updateDate": "12/23/24",
+    "sectionsOrder": ["Account Header", "Survey", "Volume", "Orders"]
+}

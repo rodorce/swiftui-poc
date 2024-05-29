@@ -21,6 +21,11 @@
 		DAE91BAB2BE92B7700E76C7D /* swiftui_pocTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE91BAA2BE92B7700E76C7D /* swiftui_pocTests.swift */; };
 		DAE91BB52BE92B7700E76C7D /* swiftui_pocUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE91BB42BE92B7700E76C7D /* swiftui_pocUITests.swift */; };
 		DAE91BB72BE92B7700E76C7D /* swiftui_pocUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE91BB62BE92B7700E76C7D /* swiftui_pocUITestsLaunchTests.swift */; };
+		DAFFDA252C07BE1600765C9A /* AccountsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFFDA242C07BE1600765C9A /* AccountsView.swift */; };
+		DAFFDA272C07BF2B00765C9A /* MDM.json in Resources */ = {isa = PBXBuildFile; fileRef = DAFFDA262C07BF2B00765C9A /* MDM.json */; };
+		DAFFDA292C07BF7900765C9A /* AccountHeaderBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFFDA282C07BF7900765C9A /* AccountHeaderBox.swift */; };
+		DAFFDA2B2C07C4D100765C9A /* NAM.json in Resources */ = {isa = PBXBuildFile; fileRef = DAFFDA2A2C07C4D100765C9A /* NAM.json */; };
+		DAFFDA2D2C07C4DE00765C9A /* OnPrem.json in Resources */ = {isa = PBXBuildFile; fileRef = DAFFDA2C2C07C4DE00765C9A /* OnPrem.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +63,11 @@
 		DAE91BB02BE92B7700E76C7D /* swiftui-pocUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "swiftui-pocUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAE91BB42BE92B7700E76C7D /* swiftui_pocUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swiftui_pocUITests.swift; sourceTree = "<group>"; };
 		DAE91BB62BE92B7700E76C7D /* swiftui_pocUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swiftui_pocUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		DAFFDA242C07BE1600765C9A /* AccountsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsView.swift; sourceTree = "<group>"; };
+		DAFFDA262C07BF2B00765C9A /* MDM.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = MDM.json; sourceTree = "<group>"; };
+		DAFFDA282C07BF7900765C9A /* AccountHeaderBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountHeaderBox.swift; sourceTree = "<group>"; };
+		DAFFDA2A2C07C4D100765C9A /* NAM.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = NAM.json; sourceTree = "<group>"; };
+		DAFFDA2C2C07C4DE00765C9A /* OnPrem.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = OnPrem.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				DA2288122BFB965900D47F80 /* Account.swift */,
+				DAFFDA282C07BF7900765C9A /* AccountHeaderBox.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -107,6 +118,7 @@
 				DA22880C2BFB92AA00D47F80 /* HomeView.swift */,
 				DA2288142BFB96C300D47F80 /* AccountsListView.swift */,
 				DAE91B9B2BE92B7500E76C7D /* ContentView.swift */,
+				DAFFDA242C07BE1600765C9A /* AccountsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -158,6 +170,9 @@
 				DAE91B992BE92B7500E76C7D /* swiftui_pocApp.swift */,
 				DAE91B9D2BE92B7600E76C7D /* Assets.xcassets */,
 				DA2288102BFB95DD00D47F80 /* data.json */,
+				DAFFDA262C07BF2B00765C9A /* MDM.json */,
+				DAFFDA2A2C07C4D100765C9A /* NAM.json */,
+				DAFFDA2C2C07C4DE00765C9A /* OnPrem.json */,
 				DAE91B9F2BE92B7600E76C7D /* Preview Content */,
 			);
 			path = "swiftui-poc";
@@ -294,7 +309,10 @@
 			files = (
 				DAE91BA12BE92B7600E76C7D /* Preview Assets.xcassets in Resources */,
 				DA2288112BFB95DD00D47F80 /* data.json in Resources */,
+				DAFFDA272C07BF2B00765C9A /* MDM.json in Resources */,
 				DAE91B9E2BE92B7600E76C7D /* Assets.xcassets in Resources */,
+				DAFFDA2D2C07C4DE00765C9A /* OnPrem.json in Resources */,
+				DAFFDA2B2C07C4D100765C9A /* NAM.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -324,8 +342,10 @@
 				DA2288212BFBA89400D47F80 /* ViewHelpers.swift in Sources */,
 				DA22881A2BFB9B8800D47F80 /* NetworkService.swift in Sources */,
 				DA22880D2BFB92AA00D47F80 /* HomeView.swift in Sources */,
+				DAFFDA252C07BE1600765C9A /* AccountsView.swift in Sources */,
 				DAE91B9C2BE92B7500E76C7D /* ContentView.swift in Sources */,
 				DAE91B9A2BE92B7500E76C7D /* swiftui_pocApp.swift in Sources */,
+				DAFFDA292C07BF7900765C9A /* AccountHeaderBox.swift in Sources */,
 				DA2288152BFB96C300D47F80 /* AccountsListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
