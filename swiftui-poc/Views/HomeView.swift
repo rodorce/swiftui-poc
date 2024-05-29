@@ -20,27 +20,21 @@ struct HomeView: View {
                 
                 VStack {
                     Section {
-                        NavigationLink(destination: AccountsListView(viewModel: viewModel)) {
+                        NavigationLink(destination: AccountsView(viewModel: viewModel, role: "MDM")) {
                             Text("MDM")
                                 .font(.title)
                         }
                         .modifier(NavigationLinkModifier())
-                        
-                        NavigationLink(destination: AccountsListView(viewModel: viewModel)) {
+                        NavigationLink(destination: AccountsView(viewModel: viewModel, role: "NAM")) {
                             Text("NAM")
                                 .font(.title)
                         }
                         .modifier(NavigationLinkModifier())
-
-                        
-                        NavigationLink(destination: AccountsListView(viewModel: viewModel)) {
-                            Text("On Prem")
+                        NavigationLink(destination: AccountsView(viewModel: viewModel, role: "OnPrem")) {
+                            Text("OnPrem")
                                 .font(.title)
                         }
                         .modifier(NavigationLinkModifier())
-
-                        
-                        
                     } header: {
                         Text("Experience")
                             .font(.system(size: 60))
