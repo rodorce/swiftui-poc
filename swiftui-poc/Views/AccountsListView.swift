@@ -9,10 +9,10 @@ import Foundation
 import SwiftUI
 
 struct AccountsListView: View {
-    @ObservedObject var viewModel: AccountViewModel
+    let accounts: [Account]
     
     var body: some View {
-        List(viewModel.accounts) { account in
+        List(accounts) { account in
             VStack(content: {
                 Text(account.name)
                 Text(account.address)
