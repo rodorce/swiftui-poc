@@ -8,7 +8,7 @@
 import Foundation
 import Combine
 
-class NetworkService {
+class AccountsDataService {
     
     @Published var accounts: [Account] = []
     @Published var accountHeaderBox: [String:AccountHeaderBox] = [:]
@@ -24,18 +24,10 @@ class NetworkService {
         guard let url = Bundle.main.url(forResource: "data", withExtension: "json") else {
             fatalError("Could not find data.json in the bundle.")
         }
-        accountsSubscription = URLSession.shared.dataTaskPublisher(for: url)
-            .map { $0.data }
+        accountsSubscription = NetworkManager.download(url: url)
             .decode(type: [Account].self, decoder: JSONDecoder())
             .receive(on: DispatchQueue.main)
-            .sink(receiveCompletion: { completion in
-                switch completion {
-                case .finished:
-                    print("Successfully received and parsed JSON.")
-                case .failure(let error):
-                    print("Error: \(error)")
-                }
-            }, receiveValue: { [weak self] accounts in
+            .sink(receiveCompletion: NetworkManager.handleCompletion, receiveValue: { [weak self] accounts in
                 self?.accounts = accounts
                 self?.accountsSubscription?.cancel()
             })
@@ -64,14 +56,7 @@ class NetworkService {
                     "OnPrem": onPrem
                 ]
             }
-            .sink(receiveCompletion: { completion in
-            switch completion {
-            case .finished:
-                print("Successfully received and parsed JSON.")
-            case .failure(let error):
-                print("Error: \(error)")
-            }
-        }, receiveValue: { [weak self] accountHeaderBox in
+            .sink(receiveCompletion:NetworkManager.handleCompletion, receiveValue: { [weak self] accountHeaderBox in
             self?.accountHeaderBox = accountHeaderBox
             self?.accountHeaderBoxSubscription?.cancel()
         })

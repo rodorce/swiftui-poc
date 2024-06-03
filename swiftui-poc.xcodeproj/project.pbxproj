@@ -12,7 +12,7 @@
 		DA2288132BFB965900D47F80 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2288122BFB965900D47F80 /* Account.swift */; };
 		DA2288152BFB96C300D47F80 /* AccountsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2288142BFB96C300D47F80 /* AccountsListView.swift */; };
 		DA2288172BFB96FF00D47F80 /* AccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2288162BFB96FF00D47F80 /* AccountViewModel.swift */; };
-		DA22881A2BFB9B8800D47F80 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2288192BFB9B8800D47F80 /* NetworkService.swift */; };
+		DA22881A2BFB9B8800D47F80 /* AccountsDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2288192BFB9B8800D47F80 /* AccountsDataService.swift */; };
 		DA2288212BFBA89400D47F80 /* ViewHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2288202BFBA89400D47F80 /* ViewHelpers.swift */; };
 		DAE91B9A2BE92B7500E76C7D /* swiftui_pocApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE91B992BE92B7500E76C7D /* swiftui_pocApp.swift */; };
 		DAE91B9C2BE92B7500E76C7D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE91B9B2BE92B7500E76C7D /* ContentView.swift */; };
@@ -26,6 +26,11 @@
 		DAFFDA292C07BF7900765C9A /* AccountHeaderBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFFDA282C07BF7900765C9A /* AccountHeaderBox.swift */; };
 		DAFFDA2B2C07C4D100765C9A /* NAM.json in Resources */ = {isa = PBXBuildFile; fileRef = DAFFDA2A2C07C4D100765C9A /* NAM.json */; };
 		DAFFDA2D2C07C4DE00765C9A /* OnPrem.json in Resources */ = {isa = PBXBuildFile; fileRef = DAFFDA2C2C07C4DE00765C9A /* OnPrem.json */; };
+		DAFFDA302C08D7CE00765C9A /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFFDA2F2C08D7CE00765C9A /* NetworkManager.swift */; };
+		DAFFDA322C0D93DA00765C9A /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFFDA312C0D93DA00765C9A /* Repository.swift */; };
+		DAFFDA342C0D940000765C9A /* RepositoryDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFFDA332C0D940000765C9A /* RepositoryDataService.swift */; };
+		DAFFDA362C0D954500765C9A /* RepositoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFFDA352C0D954500765C9A /* RepositoryView.swift */; };
+		DAFFDA382C0D983200765C9A /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFFDA372C0D983200765C9A /* WebView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,7 +56,7 @@
 		DA2288122BFB965900D47F80 /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
 		DA2288142BFB96C300D47F80 /* AccountsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsListView.swift; sourceTree = "<group>"; };
 		DA2288162BFB96FF00D47F80 /* AccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewModel.swift; sourceTree = "<group>"; };
-		DA2288192BFB9B8800D47F80 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		DA2288192BFB9B8800D47F80 /* AccountsDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsDataService.swift; sourceTree = "<group>"; };
 		DA2288202BFBA89400D47F80 /* ViewHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewHelpers.swift; sourceTree = "<group>"; };
 		DAE91B962BE92B7500E76C7D /* swiftui-poc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "swiftui-poc.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAE91B992BE92B7500E76C7D /* swiftui_pocApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swiftui_pocApp.swift; sourceTree = "<group>"; };
@@ -68,6 +73,11 @@
 		DAFFDA282C07BF7900765C9A /* AccountHeaderBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountHeaderBox.swift; sourceTree = "<group>"; };
 		DAFFDA2A2C07C4D100765C9A /* NAM.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = NAM.json; sourceTree = "<group>"; };
 		DAFFDA2C2C07C4DE00765C9A /* OnPrem.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = OnPrem.json; sourceTree = "<group>"; };
+		DAFFDA2F2C08D7CE00765C9A /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		DAFFDA312C0D93DA00765C9A /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
+		DAFFDA332C0D940000765C9A /* RepositoryDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryDataService.swift; sourceTree = "<group>"; };
+		DAFFDA352C0D954500765C9A /* RepositoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryView.swift; sourceTree = "<group>"; };
+		DAFFDA372C0D983200765C9A /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +110,7 @@
 			children = (
 				DA2288122BFB965900D47F80 /* Account.swift */,
 				DAFFDA282C07BF7900765C9A /* AccountHeaderBox.swift */,
+				DAFFDA312C0D93DA00765C9A /* Repository.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -119,6 +130,8 @@
 				DA2288142BFB96C300D47F80 /* AccountsListView.swift */,
 				DAE91B9B2BE92B7500E76C7D /* ContentView.swift */,
 				DAFFDA242C07BE1600765C9A /* AccountsView.swift */,
+				DAFFDA352C0D954500765C9A /* RepositoryView.swift */,
+				DAFFDA372C0D983200765C9A /* WebView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -126,7 +139,8 @@
 		DA2288182BFB9B7200D47F80 /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				DA2288192BFB9B8800D47F80 /* NetworkService.swift */,
+				DA2288192BFB9B8800D47F80 /* AccountsDataService.swift */,
+				DAFFDA332C0D940000765C9A /* RepositoryDataService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -162,6 +176,7 @@
 		DAE91B982BE92B7500E76C7D /* swiftui-poc */ = {
 			isa = PBXGroup;
 			children = (
+				DAFFDA2E2C08D7BF00765C9A /* Utilities */,
 				DA2288182BFB9B7200D47F80 /* Services */,
 				DA22881F2BFBA87E00D47F80 /* Helpers */,
 				DA22880B2BFB926600D47F80 /* Views */,
@@ -201,6 +216,14 @@
 				DAE91BB62BE92B7700E76C7D /* swiftui_pocUITestsLaunchTests.swift */,
 			);
 			path = "swiftui-pocUITests";
+			sourceTree = "<group>";
+		};
+		DAFFDA2E2C08D7BF00765C9A /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				DAFFDA2F2C08D7CE00765C9A /* NetworkManager.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -340,13 +363,18 @@
 				DA2288132BFB965900D47F80 /* Account.swift in Sources */,
 				DA2288172BFB96FF00D47F80 /* AccountViewModel.swift in Sources */,
 				DA2288212BFBA89400D47F80 /* ViewHelpers.swift in Sources */,
-				DA22881A2BFB9B8800D47F80 /* NetworkService.swift in Sources */,
+				DA22881A2BFB9B8800D47F80 /* AccountsDataService.swift in Sources */,
+				DAFFDA302C08D7CE00765C9A /* NetworkManager.swift in Sources */,
 				DA22880D2BFB92AA00D47F80 /* HomeView.swift in Sources */,
+				DAFFDA382C0D983200765C9A /* WebView.swift in Sources */,
 				DAFFDA252C07BE1600765C9A /* AccountsView.swift in Sources */,
 				DAE91B9C2BE92B7500E76C7D /* ContentView.swift in Sources */,
+				DAFFDA362C0D954500765C9A /* RepositoryView.swift in Sources */,
 				DAE91B9A2BE92B7500E76C7D /* swiftui_pocApp.swift in Sources */,
 				DAFFDA292C07BF7900765C9A /* AccountHeaderBox.swift in Sources */,
 				DA2288152BFB96C300D47F80 /* AccountsListView.swift in Sources */,
+				DAFFDA342C0D940000765C9A /* RepositoryDataService.swift in Sources */,
+				DAFFDA322C0D93DA00765C9A /* Repository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

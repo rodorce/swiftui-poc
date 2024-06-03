@@ -35,6 +35,18 @@ struct HomeView: View {
                                 .font(.title)
                         }
                         .modifier(NavigationLinkModifier())
+                        NavigationLink(destination: RepositoryView(viewModel: viewModel)) {
+                            Text("Test API Calls")
+                                .font(.title)
+                        }
+                        .modifier(NavigationLinkModifier())
+                        ForEach(viewModel.urls, id: \.self) { url in
+                            NavigationLink(destination: WebView(url: url)) {
+                                Text("Grid view")
+                                    .font(.title)
+                            }
+                            .modifier(NavigationLinkModifier())
+                        }
                     } header: {
                         Text("Experience")
                             .font(.system(size: 60))
